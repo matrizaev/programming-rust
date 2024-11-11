@@ -24,8 +24,7 @@ fn main() {
     let args = Args::parse();
 
     if args.numbers.len() < 2 {
-        eprintln!("Usage: cargo run -- <numbers>");
-        return;
+        panic!("Usage: cargo run -- <numbers>");
     }
 
     let mut result = args.numbers[0];
